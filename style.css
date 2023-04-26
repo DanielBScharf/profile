@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        font-family: 'Castoro Titling', cursive;
+        text-align: center;
+        font-weight: 400;
+      }
+}
 .image_circle {
   border-radius: 50%;
   width: 200px;
@@ -8,13 +28,6 @@
 }
 
 
-
-body {
-  background-color: #9DC08B;
-  font-family: 'Castoro Titling', cursive;
-  text-align: center;
-  font-weight: 400;
-}
 
 h1{
   width: 0 400px;
