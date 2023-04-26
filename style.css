@@ -16,27 +16,16 @@ body  {
 
         -webkit-animation-direction: alternate;
         animation-direction: alternate;
-}
-.image_circle {
-  border-radius: 50%;
-  width: 200px;
-  box-shadow:  0 10px 30px rgba(0,0,0,.5);
-}
-
-.image_circle {
-  border-radius: 50%;
-  width: 200px;
-  box-shadow:  0 10px 30px rgba(0,0,0,.5);
-}
-
-
-
-body {
-  background-color: #9DC08B;
   font-family: 'Castoro Titling', cursive;
   text-align: center;
   font-weight: 400;
 }
+.image_circle {
+  border-radius: 50%;
+  width: 200px;
+  box-shadow:  0 10px 30px rgba(0,0,0,.5);
+}
+
 
 h1{
   width: 0 400px;
