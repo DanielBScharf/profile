@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Castoro+Titling&display=swap');
+
+.image_circle {
+  border-radius: 50%;
+  width: 200px;
+  box-shadow:  0 10px 30px rgba(0,0,0,.5);
+}
+
+
+
+body {
+  background-color: #9DC08B;
+  font-family: 'Castoro Titling', cursive;
+  text-align: center;
+  font-weight: 400;
+}
+
+h1{
+  width: 0 400px;
+  background: #F8F5E4;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  color: #3F497F;
+  font-family: 'Bruno Ace', cursive;
+}
+
+.header {
+  text-align: center;
+  margin: 20px 5%;
+}
+
+.card {
+  background: #F8F5E4;
+  width: 0 350px;
+  padding: 30px;
+  margin: 20px 10%;
+  border-radius: 9px;
+  box-shadow: 2 10px 30px rgba(10,10,10,.1);
+}
+
+ul {
+  list-style: none;
+}
+
+.header:hover{
+  background-color: rgb(58, 81, 58);
+  color: whitesmoke;
+  width: 0 400px;
+  padding: 30px;
+}
+
+li a {
+  background-color: #F8F5E4;
+  color: #3F497F;
+  width: 50px;
+  font-size: 60px;
+}
+.inlineList {
+  display: inline-block;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  body {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  body {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  body {
+    width: 300px;
+  }
+}
