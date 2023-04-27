@@ -6,6 +6,6 @@ const original = "Daniel Scharf is a former English teacher, educator, and tutor
 paragraph.onmouseover = function () {
   paragraph.innerText = info;
 };
-paragraph.onclick = function () {
+paragraph.onmouseout = function () {
   paragraph.innerText = original;
 };

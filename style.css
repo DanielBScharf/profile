@@ -19,6 +19,7 @@ body  {
         font-family: 'Castoro Titling', cursive;
         text-align: center;
         font-weight: 400;
+        background-attachment: fixed;
       }
 
 .image_circle {
