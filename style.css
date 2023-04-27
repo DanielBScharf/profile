@@ -62,8 +62,7 @@ ul {
 .header:hover{
   background-color: rgb(58, 81, 58);
   color: whitesmoke;
-  width: 0 400px;
-  padding: 30px;
+  transition: .5s;
 }
 
 li a {
