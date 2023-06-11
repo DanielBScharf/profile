@@ -1,0 +1,57 @@
+.card {
+  display: flex;
+  width: 0 350px;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 9px;
+  box-shadow: 2px 4px 3px rgba(10,10,10,.1);
+  color: aliceblue;
+  justify-content: center;
+}
+
+/* .card:hover {
+  background-color: #8e8e82;
+} */
+
+.floating-card {
+  background: #dbd6bf;
+  width: 0 350px;
+  padding: 30px;
+  margin: 20px 10%;
+  border-radius: 10px;
+  box-shadow: 6px 5px 5px rgba(0,0,0,.1);
+  margin: auto;
+  text-shadow: 3px 5px 5px lightgrey;
+  font-weight: 600;
+  color:rgba(16, 14, 14, 0.5)
+}
+
+.jobs {
+  justify-content: space-between;
+}
+
+.job-card {
+  width: 100px;
+  height: 40px;
+  padding: 8px 8px;
+}
+
+.sou {
+left: 20vw;
+position: absolute;
+}
+
+.tiu {
+left: 50vw;
+position: absolute;
+}
+
+.psu {
+left: 80vw;
+position: absolute;
+}
+
+.job-card:hover {
+  background-color: #f8f5e4;
+  box-shadow:  0 3px 3px rgba(200, 193, 193, 0.5);
+}

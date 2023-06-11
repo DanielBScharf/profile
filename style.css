@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Castoro+Titling&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
-
+@import url(components/cards.css);
 body  {
-    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    /* background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
   background-size:cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
@@ -19,8 +19,12 @@ body  {
         font-family: 'Castoro Titling', cursive;
         text-align: center;
         font-weight: 400;
-        background-attachment: fixed;
+        background-attachment: fixed; */
+        background-color: black;
       }
+h2 {
+  color: aliceblue;
+}
 
 .image_circle {
   border-radius: 50%;
@@ -28,9 +32,11 @@ body  {
   box-shadow:  0 10px 30px rgba(0,0,0,.5);
 }
 
+.hidden {
+  visibility: hidden;
+}
 
-
-h1{
+/* h1{
   width: 0 400px;
   background: #F8F5E4;
   padding: 30px;
@@ -39,21 +45,15 @@ h1{
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   color: #3F497F;
   font-family: 'Bruno Ace', cursive;
-}
+} */
 
 .header {
   text-align: center;
+  margin-top: 20px;
   margin: 20px 5%;
+  justify-content: center;
 }
 
-.card {
-  background: #F8F5E4;
-  width: 0 350px;
-  padding: 30px;
-  margin: 20px 10%;
-  border-radius: 9px;
-  box-shadow: 2 10px 30px rgba(10,10,10,.1);
-}
 
 ul {
   list-style: none;
@@ -73,6 +73,42 @@ li a {
 }
 .inlineList {
   display: inline-block;
+}
+
+.sou-img {
+  background-image: url("images/sou.png");
+  width: 350px;
+  justify-content: center;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.psu-img {
+  background-image: url("images/psu.png");
+  justify-content: center;
+  width: 350px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.tiu-img {
+  background-image: url("images/tiu.png");
+  background-repeat: no-repeat;
+  justify-content: center;
+  width: 350px;
+  object-fit: contain;
+}
+
+.paragraph {
+  color: aliceblue;
+}
+
+.header {
+  color: aliceblue;
+}
+
+.presentations {
+  margin-top: 20px;
 }
 
 @media (max-width: 960px) {
