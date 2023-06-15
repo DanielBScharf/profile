@@ -23,16 +23,6 @@ const psuInfo = {
   photo: 'images/psu.png'
 };
 
-const conferences = {
-  pres1: ["Use what you have: Helping Sri Lankan academics create tutoring centers at their universities", "International Writing Center Association (IWCA) Annual Conference, October 2022, Vancouver, Canada."],
-  pres2: ["Supporting Students with a Tutoring Center", "Online workshops organized through the Education Expansion and Development (AHEAD) Operation and the Sri Lankan Ministry of Education."],
-  pres3: ["Training of Trainers (ToT) to Develop Academic Literacy among Undergraduates", "Online workshops organized through the Education Expansion and Development (AHEAD) Operation and the Sri Lankan Ministry of Education"],
-  pres4: ["Academic Literacy in an EMI Context: A Workshop", "Online workshops organized through the Education Expansion and Development (AHEAD) Operation and the Sri Lankan Ministry of Education"],
-  pres5: ["Beyond the writing center: Inviting peer tutors into the classroom to help with the writing process", "International Writing Center Association Japan"],
-  pres6: ["Students Helping Students: An Introduction to the TIU Peer Writing Center", "Thai TESOL conference"],
-  pres7: ["Growing a Curriculum: Blending Analytical Reading and Writing Courses to Maximize Student Success", "Saitama JALT Conference"]
-}
-
 const sou = document.querySelector(".sou");
 const souCard = document.querySelector(".souCard");
 const psu = document.querySelector(".psu");
@@ -62,34 +52,6 @@ const infoCard = (job, card) => {
   infoCard.appendChild(duties);
   card.appendChild(infoCard);
 };
-
-const listPresentations = (conference) => {
-  conference.values(value).forEach(value => {
-    let presentationName = document.appendChild('li');
-    let presentationLocation = document.appendChild('li');
-      presentationName.innerText = value[0];
-      presentationLocation.innerText = value[1];
-    });
-}
-
-function removeAllChildNodes(parent) {
-  while (parent.firstChild) {
-      parent.removeChild(parent.firstChild);
-  }
-}
-
-presentations.addEventListener('click', function() {
-  for (const [value] of Object.enteries(conferences)){
-    let presentationName = document.appendChild('li');
-    let presentationLocation = document.appendChild('li');
-      presentationName.innerText = value[0];
-      presentationLocation.innerText = value[1];
-  };
-  presList.addEventListener('click', removeAllChildNodes(presentations));
-    presentations.classList.remove("hidden");
-});
-
-
 
 sou.addEventListener('mouseover', function() {infoCard(souInfo, souCard);
   sou.classList.add('hidden');

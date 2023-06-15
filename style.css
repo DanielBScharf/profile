@@ -109,6 +109,7 @@ li a {
 
 .presentations {
   margin-top: 20px;
+  position: relative;
 }
 
 @media (max-width: 960px) {

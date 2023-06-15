@@ -28,30 +28,38 @@
 
 .jobs {
   justify-content: space-between;
+  width: 100px;
 }
 
 .job-card {
   width: 100px;
-  height: 40px;
   padding: 8px 8px;
 }
 
 .sou {
 left: 20vw;
+width: 100px;
 position: absolute;
 }
 
 .tiu {
 left: 50vw;
+width: 100px;
 position: absolute;
 }
 
 .psu {
 left: 80vw;
+width: 100px;
 position: absolute;
 }
 
 .job-card:hover {
   background-color: #f8f5e4;
   box-shadow:  0 3px 3px rgba(200, 193, 193, 0.5);
+  z-index: 2;
+}
+
+.pres-card {
+  margin-top: 200px;
 }
