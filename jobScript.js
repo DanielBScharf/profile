@@ -4,7 +4,8 @@ const souInfo = {
   location: "Ashland Oregon",
   jobTitle: "Coordinator of library student support services",
   duties: "Tutor training, training program creation, cross departmental communication to advance the tutoring center, promotions, scheduling, payroll, organizational, supervising tutors, etc.",
-  photo: 'images/sou.png'
+  photo: 'images/sou.png',
+  link: 'https://sou.edu/'
 };
 
 const tiuInfo = {
@@ -12,15 +13,17 @@ const tiuInfo = {
   location: "Kawagoe Japan",
   jobTitle: "Global Teaching Fello, lecturer",
   duties: "English teaching, tutuoring, academic literacy teaching. Curriculum design for Academic Literacy course, curriculum liaison to other teachers. Co Founder and coordinator/administrator of the Peer Advisers for Writing program for English medium instruction students at TIU, April 2017.",
-  photo: 'images/tiu.png'
+  photo: 'images/tiu.png',
+  link: 'https://www.tiu.ac.jp/etrack/'
 };
 
 const psuInfo = {
   name: "Portland State University",
   location: "Portland Oregon",
-  jobTitle: "English Tutor",
+  jobTitle: "Intensive English Language Program Tutor",
   duties: "Helped students one on one with questions and problems with reading, speaking, pronunciation, writing, grammar, and vocabulary.",
-  photo: 'images/psu.png'
+  photo: 'images/psu.png',
+  link: 'https://www.pdx.edu/'
 };
 
 const sou = document.querySelector(".sou");
@@ -34,44 +37,36 @@ const presList = document.querySelector(".presList")
 
 const infoCard = (job, card) => {
   let infoCard = document.createElement('div');
-  let location = document.createElement('p');
-  let title = document.createElement('p');
-  let duties = document.createElement('p');
-  let name = document.createElement('h3');
-  let image = document.createElement('div');
-  name.innerText = job.name;
-  location.innerText = job.location;
-  title.innerText = job.jobTitle;
-  duties.innerText = job.duties;
-  image.innerHTML = `<img src=${job.photo}>`;
-  infoCard.classList.add("floating-card");
-  infoCard.appendChild(image);
-  infoCard.appendChild(name);
-  infoCard.appendChild(location);
-  infoCard.appendChild(title);
-  infoCard.appendChild(duties);
+  infoCard.innerHTML = `<div class="card" style="width: 18rem;">
+  <img src="${job.photo}" class="card-img-top" alt="logo for ${job.name}">
+  <div class="card-body">
+    <h5 class="card-title">${job.name}</h5>
+    <p class="card-text">${job.location}</p>
+    <p class="card-text">${job.jobTitle} ${job.duties}</p>
+  </div>
+</div>`;
   card.appendChild(infoCard);
 };
 
-sou.addEventListener('mouseover', function() {infoCard(souInfo, souCard);
+sou.addEventListener('click', function() {infoCard(souInfo, souCard);
   sou.classList.add('hidden');
-  souCard.addEventListener('mouseout', function (){
+  souCard.addEventListener('click', function (){
     souCard.firstChild.remove();
     sou.classList.remove('hidden');
   });
 });
 
-psu.addEventListener('mouseover', function() {infoCard(psuInfo, psuCard);
+psu.addEventListener('click', function() {infoCard(psuInfo, psuCard);
   psu.classList.add('hidden');
-  psuCard.addEventListener('mouseout', function (){
+  psuCard.addEventListener('click', function (){
     psuCard.firstChild.remove();
     psu.classList.remove('hidden');
   });
 });
 
-tiu.addEventListener('mouseover', function() {infoCard(tiuInfo, tiuCard);
+tiu.addEventListener('click', function() {infoCard(tiuInfo, tiuCard);
   tiu.classList.add('hidden');
-  tiuCard.addEventListener('mouseout', function (){
+  tiuCard.addEventListener('click', function (){
     tiuCard.firstChild.remove();
     tiu.classList.remove('hidden');
   });

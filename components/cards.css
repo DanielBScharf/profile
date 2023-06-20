@@ -1,12 +1,21 @@
 .card {
+  align-self: center;
   display: flex;
-  width: 0 350px;
+  max-width: 550px;
+  max-height: 300px;
   padding: 30px;
   margin: 20px;
   border-radius: 9px;
   box-shadow: 2px 4px 3px rgba(10,10,10,.1);
   color: aliceblue;
   justify-content: center;
+  background-color: blanchedalmond;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 /* .card:hover {
@@ -28,30 +37,56 @@
 
 .jobs {
   justify-content: space-between;
-  width: 100px;
+  width: 90wv;
+  display: flex;
+  align-items: center;
+  height: 200px;
 }
 
-.job-card {
+.pres-card {
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  overflow: auto;
+}
+
+/* .job-card {
   width: 100px;
   padding: 8px 8px;
-}
+} */
 
 .sou {
-left: 20vw;
-width: 100px;
+left: 10vw;
+width: 200px;
+align-self: center;
 position: absolute;
+background-color: white;
+border-radius: 16px;
+box-shadow: 6px 5px 5px rgba(0,0,0,.1);
 }
 
 .tiu {
-left: 50vw;
-width: 100px;
+left: 35vw;
+width: 200px;
+align-self: center;
 position: absolute;
+background-color: white;
+border-radius: 16px;
+box-shadow: 6px 5px 5px rgba(0,0,0,.1);
 }
 
 .psu {
-left: 80vw;
-width: 100px;
+left: 60vw;
+width: 200px;
+align-self: center;
 position: absolute;
+background-color: white;
+border-radius: 16px;
+box-shadow: 6px 5px 5px rgba(0,0,0,.1);
+}
+
+.carousel {
+  max-width: 800px;
 }
 
 .job-card:hover {
@@ -60,6 +95,7 @@ position: absolute;
   z-index: 2;
 }
 
-.pres-card {
-  margin-top: 200px;
+
+.end {
+  align-items: center;
 }

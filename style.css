@@ -2,29 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Castoro+Titling&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 @import url(components/cards.css);
-body  {
-    /* background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
-  background-size:cover;
-        -webkit-animation: slidein 100s;
-        animation: slidein 100s;
 
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-
-        -webkit-animation-direction: alternate;
-        animation-direction: alternate;
-        font-family: 'Castoro Titling', cursive;
-        text-align: center;
-        font-weight: 400;
-        background-attachment: fixed; */
-        background-color: black;
-      }
 h2 {
   color: aliceblue;
 }
+
 
 .image_circle {
   border-radius: 50%;
@@ -33,36 +15,52 @@ h2 {
 }
 
 .hidden {
-  visibility: hidden;
+  visibility: collapse;
 }
 
-/* h1{
-  width: 0 400px;
-  background: #F8F5E4;
+h1 {
+  font-size: 100px;
   padding: 30px;
   margin: 0 auto;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  color: #3F497F;
+  text-shadow: 0 10px 30px rgba(7, 7, 7, 0.1);
   font-family: 'Bruno Ace', cursive;
-} */
+}
+
+a {
+  color: black;
+}
 
 .header {
   text-align: center;
   margin-top: 20px;
   margin: 20px 5%;
   justify-content: center;
+  color: black;
 }
 
-
-ul {
-  list-style: none;
+.header h1 {
+  font-size: 80px;
+  text-shadow: 0 10px 30px rgba(1, 1, 1, 0.1);
+  font-family: 'Bruno Ace', cursive;
 }
 
-.header:hover{
-  background-color: rgb(58, 81, 58);
-  color: whitesmoke;
-  transition: .5s;
+.cardheader {
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px 5%;
+  justify-content: center;
+  color: black;
+}
+
+#carouselExampleAutoplaying {
+  overflow: auto;
+}
+
+.end ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
 }
 
 li a {
@@ -70,9 +68,11 @@ li a {
   color: #3F497F;
   width: 50px;
   font-size: 60px;
+  padding-left: 0px;
 }
 .inlineList {
   display: inline-block;
+  padding: 0px;
 }
 
 .sou-img {
@@ -100,6 +100,7 @@ li a {
 }
 
 .paragraph {
+  max-width: 450x;
   color: aliceblue;
 }
 
