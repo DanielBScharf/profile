@@ -113,6 +113,11 @@ li a {
   position: relative;
 }
 
+.carousel-control-prev {
+  position: relative;
+  display: inline;
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   body {
