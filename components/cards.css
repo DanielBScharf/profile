@@ -12,6 +12,14 @@
   background-color: blanchedalmond;
 }
 
+.coding-lang {
+max-width: 90vw;
+background-color: white;
+border-radius: 9px;
+box-shadow: 2px 4px 3px rgba(10,10,10,.1);
+justify-content: center;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -36,10 +44,11 @@
 }
 
 .jobs {
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  margin-left: 50px;
   width: 90wv;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   height: 200px;
 }
 
@@ -56,30 +65,30 @@
 } */
 
 .sou {
-left: 10vw;
-width: 200px;
-align-self: center;
-position: absolute;
+/* left: 10vw; */
+/* width: 200px; */
+/* align-self: center; */
+/* position: absolute; */
 background-color: white;
 border-radius: 16px;
 box-shadow: 6px 5px 5px rgba(0,0,0,.1);
 }
 
 .tiu {
-left: 35vw;
-width: 200px;
-align-self: center;
-position: absolute;
+/* left: 35vw; */
+/* width: 200px; */
+/* align-self: center; */
+/* position: absolute; */
 background-color: white;
 border-radius: 16px;
 box-shadow: 6px 5px 5px rgba(0,0,0,.1);
 }
 
 .psu {
-left: 60vw;
-width: 200px;
-align-self: center;
-position: absolute;
+/* left: 60vw; */
+/* width: 200px; */
+/* align-self: center; */
+/* position: absolute; */
 background-color: white;
 border-radius: 16px;
 box-shadow: 6px 5px 5px rgba(0,0,0,.1);
