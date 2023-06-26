@@ -58,6 +58,10 @@ a {
   overflow: auto;
 }
 
+.end {
+  margin-top: 30px;
+}
+
 .end ul {
   list-style-type: none;
   list-style-position: inside;
@@ -117,6 +121,10 @@ li a {
 .carousel-control-prev {
   position: relative;
   display: inline;
+}
+
+.col-md-4 {
+  min-height: 50px;
 }
 
 @media (max-width: 960px) {

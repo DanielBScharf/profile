@@ -49,6 +49,7 @@ justify-content: center;
   display: flex;
   /* align-items: center; */
   height: 200px;
+  margin-bottom: 70px;
 }
 
 .pres-card {
