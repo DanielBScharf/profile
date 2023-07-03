@@ -143,11 +143,18 @@ li a {
     align-items: center;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 400px) {
   /* For a screen < 540px, this CSS will be read */
-  body {
-    width: 300px;
+  .everything {
+    max-width: 390px;
+    /* right: auto;
+    left: auto; */
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex: none;
+    display: grid;
+    margin: 0;
   }
   .image_circle {
     width: 280px;
