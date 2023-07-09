@@ -105,6 +105,14 @@ li a {
   object-fit: contain;
 }
 
+.owca-img {
+  background-image: url("images/owca.png");
+  background-repeat: no-repeat;
+  justify-content: center;
+  width: 350px;
+  object-fit: contain;
+}
+
 .paragraph {
   max-width: 450x;
   color: aliceblue;

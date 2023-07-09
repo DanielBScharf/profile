@@ -26,6 +26,17 @@ const psuInfo = {
   link: 'https://www.pdx.edu/'
 };
 
+const owcaInfo = {
+  name: "Online Writing Center Association",
+  location: "Online/Global",
+  jobTitle: "Volunteer Website Coordinator",
+  duties: "Maintaining and updating website, fixing problems that arise, optimising web problems. Learning PHP to fix more advanced problems with WordPress sites",
+  photo : "images/owca.png",
+  link: 'https://www.onlinewritingcenters.org/'
+}
+
+const owca = document.querySelector('.owca');
+const owcaCard = document.querySelector('.owcaCard');
 const sou = document.querySelector(".sou");
 const souCard = document.querySelector(".souCard");
 const psu = document.querySelector(".psu");
@@ -69,5 +80,13 @@ tiu.addEventListener('click', function() {infoCard(tiuInfo, tiuCard);
   tiuCard.addEventListener('click', function (){
     tiuCard.firstChild.remove();
     tiu.classList.remove('hidden');
+  });
+});
+
+owca.addEventListener('click', function() {infoCard(owcaInfo, owcaCard);
+  owca.classList.add('hidden');
+  owcaCard.addEventListener('click', function (){
+    owcaCard.firstChild.remove();
+    owca.classList.remove('hidden');
   });
 });

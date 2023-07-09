@@ -29,19 +29,6 @@ justify-content: center;
   background-color: #8e8e82;
 } */
 
-.floating-card {
-  background: #dbd6bf;
-  width: 0 350px;
-  padding: 30px;
-  margin: 20px 10%;
-  border-radius: 10px;
-  box-shadow: 6px 5px 5px rgba(0,0,0,.1);
-  margin: auto;
-  text-shadow: 3px 5px 5px lightgrey;
-  font-weight: 600;
-  color:rgba(16, 14, 14, 0.5)
-}
-
 .jobs {
   /* justify-content: space-between; */
   margin-left: 50px;
@@ -92,6 +79,12 @@ box-shadow: 6px 5px 5px rgba(0,0,0,.1);
 background-color: white;
 border-radius: 16px;
 box-shadow: 6px 5px 5px rgba(0,0,0,.1);
+}
+
+.owca {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 6px 5px 5px rgba(0,0,0,.1);
 }
 
 .carousel {
