@@ -9,3 +9,18 @@ paragraph.onmouseover = function () {
 paragraph.onmouseout = function () {
   paragraph.innerText = original;
 };
+
+window.addEventListener("resize", function() {
+  if (window.matchMedia("(min-width: 400px)").matches) {
+    paragraph.onclick = function () {
+      paragraph.innerText = info;
+      paragraph.classList.add('clicked');
+    };
+    if (paragraph.classList.contains('clicked')) {
+      paragraph.onclick = function () {
+        paragraph.innerText = original;
+        paragraph.classList.remove('clicked');
+      };
+    }
+  }
+})
