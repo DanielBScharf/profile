@@ -61,6 +61,16 @@ border-radius: 16px;
 box-shadow: 6px 5px 5px rgba(0,0,0,.1);
 }
 
+.oswego {
+/* left: 10vw; */
+/* width: 200px; */
+/* align-self: center; */
+/* position: absolute; */
+background-color: white;
+border-radius: 16px;
+box-shadow: 6px 5px 5px rgba(0,0,0,.1);
+}
+
 .tiu {
 /* left: 35vw; */
 /* width: 200px; */
