@@ -30,9 +30,18 @@ const owcaInfo = {
   name: "Online Writing Center Association",
   location: "Online/Global",
   jobTitle: "Volunteer Website Coordinator",
-  duties: "Maintaining and updating website, fixing problems that arise, optimising web problems. Learning PHP to fix more advanced problems with WordPress sites",
-  photo : "images/owca.png",
+  duties: "Maintaining and updating website, fixing problems that arise, optimising web problems. Learning PHP to fix more advanced problems with WordPress sites.",
+  photo: "images/owca.png",
   link: 'https://www.onlinewritingcenters.org/'
+}
+
+const oswegoInfo = {
+  name: "SUNY Oswego, Division of Extended Learning",
+  location: "Oswego New York",
+  jobTitle: "International Language and Education Center Program Manager",
+  duties: "Overseeing English language courses and program, curriculum design; intercultural competency workshop creation and presentation; helping internationla students succeed.",
+  photo: "images/oswego.png",
+  link: "https://ww1.oswego.edu/extended-learning/profile/daniel-scharf"
 }
 
 const owca = document.querySelector('.owca');
@@ -43,8 +52,10 @@ const psu = document.querySelector(".psu");
 const psuCard = document.querySelector(".psuCard");
 const tiu = document.querySelector(".tiu");
 const tiuCard = document.querySelector(".tiuCard");
+const oswego = document.querySelector(".oswego");
+const oswegoCard = document.querySelector(".oswegoCard");
 const presentations = document.querySelector(".presentations");
-const presList = document.querySelector(".presList")
+const presList = document.querySelector(".presList");
 
 const infoCard = (job, card) => {
   let infoCard = document.createElement('div');
@@ -88,5 +99,13 @@ owca.addEventListener('click', function() {infoCard(owcaInfo, owcaCard);
   owcaCard.addEventListener('click', function (){
     owcaCard.firstChild.remove();
     owca.classList.remove('hidden');
+  });
+});
+
+oswego.addEventListener('click', function() {infoCard(oswegoInfo, oswegoCard);
+  oswego.classList.add('hidden');
+  oswegoCard.addEventListener('click', function (){
+    oswegoCard.firstChild.remove();
+    oswego.classList.remove('hidden');
   });
 });
