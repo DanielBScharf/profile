@@ -2,154 +2,243 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name-"description" content="Professional background for Daniel Scharf." />
-  <link rel="stylesheet" href="./components/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Castoro+Titling&display=swap');
-  </style>
-  <script src="https://kit.fontawesome.com/3dff4d7e1e.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daniel Scharf's Personal Site</title>
+  <title>Daniel Scharf, instructional designer</title>
+  <meta name="description" content="Daniel Scharf is an instructional designer and learning program manager with 10+ years of experience designing, delivering, and evaluating learning programs for adult and international learners.">
+  <meta property="og:title" content="Daniel Scharf, instructional designer">
+  <meta property="og:description" content="Portfolio and resume: instructional design, curriculum development, and learning program management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daniel-scharf.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310302F'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23F0B429'%3EDS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark">
-  <canvas id="stars"></canvas>
-  <div class="header">
-    <h1>Daniel Scharf</h1>
-    <img class="image_circle" src="images/me_and_percy.jpeg" width="120px" alt="A photo of Daniel and his cat">
-  </div>
-  <div class="container">
-    <p class="paragraph">Daniel Scharf is a current web developer and former English teacher, educator, and tutoring center administrator.</p>
-  </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-
-  <h3 class="presentations header">Projects</h3>
-  <div class="pres-card container">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/wordquest.png" class="d-block w-100" alt="image of wordquest landing page">
-          <a class="carousel-caption d-none d-md-block" href="https://www.wordquest.app/" target="_blank" rel="noopener noreferrer">
-            <h5>WordQuest</h5>
-            <p>A language learning RPG made as a final team project for the LeWagon Bootcamp</p>
-          </a>
-        </div>
-        <div class="carousel-item">
-          <img src="./images/blorks.png" class="d-block w-100" alt="image of blorks landing page">
-          <a class="carousel-caption d-none d-md-block" href="https://blorks-used-spaceships.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-            <h5>Blork's Used Spaceship Emporium</h5>
-            <p>Airbnb clone renting out used spaceships instead of accommodations made as team project for LeWagon Bootcamp</p>
-          </a>
-        </div>
-        <div class="carousel-item">
-          <img src="./images/memory.png" class="d-block w-100" alt="...">
-          <a class="carousel-caption d-none d-md-block" href="https://danielbscharf.github.io/Memory-Game/" target="_blank" rel="noopener noreferrer">
-            <h5>Memory Game</h5>
-            <p>Simple memory game made with Javascript.</p>
-          </a>
+  <div class="layout">
+    <header class="rail">
+      <div class="rail-id">
+        <img class="portrait" src="images/daniel-and-percy.jpg" width="320" height="320" alt="Daniel Scharf with his orange and white cat, Percy">
+        <div>
+          <p class="rail-name">Daniel Scharf</p>
+          <p class="rail-role">Instructional designer and learning program manager</p>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./images/magic.png" class="d-block w-100" alt="...">
-        <a class="carousel-caption d-none d-md-block" href="https://danielbscharf.github.io/magic-8-ball/" target="_blank" rel="noopener noreferrer">
-          <h5>Magic 8 Ball</h5>
-          <p>Simple and sassy Magic 8 Ball app.</p>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <img src="./images/billcalc.png" class="d-block w-100" alt="...">
-        <a class="carousel-caption d-none d-md-block" href="https://danielbscharf.github.io/tip-and-bill/" target="_blank" rel="noopener noreferrer">
-          <h5>Tip and Bill</h5>
-          <p>Simple tip and total bill calculator app, also splits the bill for several people.</p>
-        </a>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    </div>
 
+      <nav class="rail-nav" aria-label="Sections">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-  <h2 class="header">Education</h2>
-  <div class="container">
-    <div class="card">
-      <div class="text">
-      <h4 class="cardheader">Degrees:</h4>
-      <ul>
-        <li>   <strong>MA in <abbr title="Teaching English to Speakers of Other Languages"> TESOL </abbr></strong>: <em>Portland State University</em> - <em>2015</em> </li>
-        <li>   <strong>BA in History</strong>: <em>Southern Oregon University</em> - <em>2005</em></li>
-      </ul>
-      <h4 class="cardheader">Certificates:</h4>
-        <ul>
-          <li> <strong>Web Developement Bootcamp:</strong>  <abbr title="Intensive 400 hr coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails.">Le Wagon Tokyo 2023</abbr> </li>
-          <li> <abbr title="College Reading & Learning Association"><strong>CRLA</strong></abbr> Master Tutor Certificate: Portland State University IELP 2014</li>
-          <li> <abbr title="Teaching English as a Foreign Language"><strong>TEFL</strong></abbr> Certificate: TEFL Worldwide Prague 2008</li>
+      <div class="rail-actions">
+        <a class="button" href="Daniel_Scharf_Resume.pdf" download>Download resume (PDF)</a>
+        <ul class="rail-links">
+          <li><a href="mailto:id.scharfd@gmail.com">id.scharfd@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/scharf-daniel" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/DanielBScharf" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </div>
-      </div>
-    </div>
-  <h2 class="header">Current Coding Languages, Frameworks, and Technologies</h2>
-  <div class="container">
-    <div class="coding-lang row">
-        <p class="col-sm-3">JavaScript</p>
-        <p class="col-sm-3">Ruby</p>
-        <p class="col-sm-3">Rails</p>
-        <p class="col-sm-3">HTML</p>
-        <p class="col-sm-3">CSS</p>
-        <p class="col-sm-3">Heroku</p>
-        <p class="col-sm-3">GitHub</p>
-        <p class="col-sm-3">Git</p>
-        <p class="col-sm-3">Figma</p>
-        <p class="col-sm-3">Bootstrap</p>
-        <p class="col-sm-3">SQL</p>
-        <p class="col-sm-3">React (currently studying)</p>
-        <p class="col-sm-3">PHP (currently study)</p>
-        <p class="col-sm-3">Python (previously studied)</p>
-    </div>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="intro-heading">
+        <h1 id="intro-heading">I design, deliver, and evaluate learning programs for adult and international learners.</h1>
+        <p class="lede">For more than ten years I have built courses, training curricula, and assessments in the U.S., Japan, and Sri Lanka, for in-person, online, and hybrid delivery.</p>
+        <p>My process starts with needs and learner analysis, then works backward from measurable learning objectives to the activities and assessments that support them. I have taken programs from concept to launch, trained and coached instructional staff, and worked with stakeholders to improve learner outcomes. I hold an MA in TESOL, and I build interactive web-based learning myself with HTML, CSS, and JavaScript.</p>
+        <p class="availability">Open to remote roles. Relocating to Northern California.</p>
+      </section>
+
+      <section id="portfolio" aria-labelledby="portfolio-heading">
+        <h2 id="portfolio-heading">Portfolio</h2>
+
+        <article class="feature">
+          <a class="feature-shot" href="https://danielbscharf.github.io/Intercultural-Communication-Online-Web-Training/#showcase" target="_blank" rel="noopener">
+            <img src="images/workshop-scenario.jpg" width="1400" height="913" alt="A workshop screen titled The New Colleague: a short workplace scenario followed by three possible conclusions for the learner to choose from">
+          </a>
+          <div class="feature-body">
+            <h3>Intercultural Communication Workshop</h3>
+            <p class="feature-kind">Self-paced online course, 7 modules</p>
+            <p>I first taught this as an in-person, slide-based workshop for multicultural groups of international students. I redesigned it as a self-paced web course that teaches reusable habits instead of facts about particular cultures: noticing assumptions, tolerating ambiguity, and reflecting before judging.</p>
+            <ul>
+              <li>Uses scenario-based learning, critical incidents, and a structured reflection framework (DAEA).</li>
+              <li>Includes interactive sorting, scenario-analysis, and guided-reflection activities, with saved learner responses and progress tracking.</li>
+              <li>Built with HTML, CSS, and JavaScript through an AI-assisted workflow, applying accessibility principles.</li>
+              <li>The design rationale is documented in a published case study.</li>
+            </ul>
+            <p class="feature-links">
+              <a class="button" href="https://danielbscharf.github.io/Intercultural-Communication-Online-Web-Training/#showcase" target="_blank" rel="noopener">Take the 10-minute showcase</a>
+              <a href="https://danielbscharf.github.io/Intercultural-Communication-Online-Web-Training/" target="_blank" rel="noopener">Open the full workshop</a>
+              <a href="https://github.com/DanielBScharf/Intercultural-Communication-Online-Web-Training/blob/main/docs/DESIGN_DECISIONS.md" target="_blank" rel="noopener">Read the design case study</a>
+              <a href="https://github.com/DanielBScharf/Intercultural-Communication-Online-Web-Training" target="_blank" rel="noopener">View the source</a>
+            </p>
+          </div>
+          <figure class="feature-second">
+            <img src="images/workshop-sorting.jpg" width="1400" height="913" loading="lazy" alt="A workshop screen titled Iceberg Sorting Activity, with ten items such as greetings and ideas about fairness to classify as visible or less visible culture">
+            <figcaption>The iceberg sorting activity from module 1, where learners classify examples as visible or less visible culture.</figcaption>
+          </figure>
+        </article>
+
+        <h3 class="sub-heading">Web development projects</h3>
+        <p class="sub-note">Earlier work from the Le Wagon Tokyo bootcamp and my own practice.</p>
+        <ul class="projects">
+          <li>
+            <img src="images/wordquest.jpg" width="720" height="395" loading="lazy" alt="WordQuest landing page">
+            <div>
+              <h4>WordQuest</h4>
+              <p>A language learning RPG, built as the final team project at Le Wagon with Ruby on Rails. No longer online.</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/blorks.jpg" width="720" height="395" loading="lazy" alt="Blork's Used Spaceship Emporium landing page">
+            <div>
+              <h4><a href="https://blorks-used-spaceships.herokuapp.com/" target="_blank" rel="noopener">Blork's Used Spaceship Emporium</a></h4>
+              <p>An Airbnb-style marketplace that rents used spaceships instead of accommodations. Team project at Le Wagon, built with Ruby on Rails.</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/memory.jpg" width="720" height="464" loading="lazy" alt="Memory game board">
+            <div>
+              <h4><a href="https://danielbscharf.github.io/Memory-Game/" target="_blank" rel="noopener">Memory Game</a></h4>
+              <p>A card-matching memory game made with JavaScript.</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/magic.jpg" width="720" height="393" loading="lazy" alt="Magic 8 Ball app">
+            <div>
+              <h4><a href="https://danielbscharf.github.io/magic-8-ball/" target="_blank" rel="noopener">Magic 8 Ball</a></h4>
+              <p>A simple and sassy Magic 8 Ball app.</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/billcalc.jpg" width="720" height="393" loading="lazy" alt="Tip and bill calculator">
+            <div>
+              <h4><a href="https://danielbscharf.github.io/tip-and-bill/" target="_blank" rel="noopener">Tip and Bill</a></h4>
+              <p>A tip and total calculator that also splits the bill between several people.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+
+        <ol class="timeline">
+          <li>
+            <p class="when">Apr 2024 to present</p>
+            <h3>Program Manager, International Language and Education Center</h3>
+            <p class="where">SUNY Oswego, Oswego, NY</p>
+            <ul>
+              <li>Led the end-to-end redesign and relaunch of a 3–6 week summer intensive English program, covering curriculum, assessment strategy, learner experience, recruitment, and a budget of up to $50K; supervised 3 staff.</li>
+              <li>Restructured the program curriculum into stackable micro-credentials integrating intercultural communication and professional skills.</li>
+              <li>Designed and launched EASE, a new conditional admission pathway for students just below the English proficiency requirement, from needs analysis through support curriculum, exit criteria, and cross-department approval; first cohort enrolled Fall 2026.</li>
+              <li>Design and revise credit-bearing English for Academic Purposes curricula, including learning outcomes, assessments, rubrics, and instructional materials, and guide them through institutional governance and approval.</li>
+              <li>Designed and facilitated intercultural communication training workshops, later redesigned as a self-paced online course (see <a href="#portfolio">Portfolio</a>).</li>
+              <li>Analyze enrollment, assessment, and financial data to evaluate program performance and report recommendations to university leadership; collaborate with Admissions, International Student Services, advising, and faculty.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">Apr 2021 to Feb 2022</p>
+            <h3>Faculty Development Workshop Facilitator</h3>
+            <p class="where">AHEAD Operation, World Bank / Sri Lankan Ministry of Education (remote)</p>
+            <ul>
+              <li>Co-designed and facilitated 3 live online workshop series (6 sessions) for 50–100 university faculty per session, including a train-the-trainer program on developing academic literacy.</li>
+              <li>Guided faculty in planning and launching campus tutoring centers, adapting content to differing institutional contexts and resources.</li>
+              <li>Presented the initiative's outcomes at the International Writing Center Association Annual Conference (Vancouver, 2022).</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">Oct 2021 to Jun 2022</p>
+            <h3>Coordinator, Library Student Support Services</h3>
+            <p class="where">Southern Oregon University, Ashland, OR</p>
+            <ul>
+              <li>Supervised a team of about 17 tutors and help-desk staff, managing hiring, scheduling, training, budgeting, and performance support.</li>
+              <li>Designed and delivered a tutor training curriculum to improve instructional quality and align services with student needs.</li>
+              <li>Redesigned reservation and data-collection processes, then analyzed service data to inform program planning and decisions.</li>
+              <li>Led cross-departmental collaboration to expand academic support services.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">Mar 2016 to Sep 2021</p>
+            <h3>Global Teaching Fellow</h3>
+            <p class="where">Tokyo International University, Saitama, Japan</p>
+            <ul>
+              <li>Led an instructor team in designing the Analytical Reading and Thinking (ART) curriculum, adopted department-wide, using input from language and content faculty to identify learner needs.</li>
+              <li>Co-founded and ran the Peer Advisers for Writing (PAW) program, building staff selection, onboarding, training, procedures, and ongoing development for a team of up to 8 peer tutors.</li>
+              <li>Co-authored the PAW tutor-training handbook and program assessment materials, recognized with TESOL International's 2019 Mary Finocchiaro Award for Excellence in Unpublished Pedagogical Materials.</li>
+              <li>Designed and taught courses in academic literacy, research skills, and critical thinking; used program data and stakeholder feedback to drive continuous improvement.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h3 class="sub-heading">Additional experience</h3>
+        <dl class="additional">
+          <div>
+            <dt>Part-Time Lecturer, Academic Literacy</dt>
+            <dd>Waseda University Academic Solutions, Tokyo. Oct 2023 to Feb 2024.</dd>
+          </div>
+          <div>
+            <dt>Volunteer Website Coordinator</dt>
+            <dd>Online Writing Center Association. Jan 2023 to Dec 2024. Maintained and restructured site content for an international professional organization.</dd>
+          </div>
+          <div>
+            <dt>Business English Instructor</dt>
+            <dd>Freiburg, Germany. 2008 to 2010. Designed customized professional communication training for adult learners using presentations, simulations, and role-play.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <dl class="skills">
+          <div>
+            <dt>Instructional design</dt>
+            <dd>Needs and learner analysis, backward design, ADDIE, SMART learning objectives, scenario-based learning, assessment and rubric design, curriculum mapping, instructional materials development, eLearning development</dd>
+          </div>
+          <div>
+            <dt>Training and facilitation</dt>
+            <dd>Train-the-trainer, instructor and tutor training, virtual and in-person facilitation, coaching and mentoring, intercultural communication training, adult learning</dd>
+          </div>
+          <div>
+            <dt>Program management</dt>
+            <dd>Program lifecycle management, program evaluation and continuous improvement, data analysis and reporting, budgeting, staff supervision, stakeholder and cross-functional collaboration</dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>Canvas, Brightspace (D2L), Moodle, Microsoft 365, Excel, Google Workspace, Zoom, Teams, HTML/CSS/JavaScript, Bootstrap, GitHub, ChatGPT, Claude, NotebookLM, AI-assisted development (Codex)</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education and certifications</h2>
+        <ul class="credentials">
+          <li><strong>MA, TESOL</strong> Portland State University</li>
+          <li><strong>BA, History</strong> Southern Oregon University</li>
+          <li><strong>Certificate in Effective Teaching Practices</strong> Association of College and University Educators (ACUE), 2026</li>
+          <li><strong>Web Development Bootcamp</strong> Le Wagon, Tokyo</li>
+        </ul>
+        <p class="sub-note">Professional development: Instructional Design Essentials: Models of ID (LinkedIn Learning), TEFL Certificate, CRLA Master Level Tutor Certification.</p>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>The best way to reach me is by email.</p>
+        <p class="contact-email"><a href="mailto:id.scharfd@gmail.com">id.scharfd@gmail.com</a></p>
+        <p class="contact-links">
+          <a href="https://www.linkedin.com/in/scharf-daniel" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/DanielBScharf" target="_blank" rel="noopener">GitHub</a>
+          <a href="Daniel_Scharf_Resume.pdf" download>Resume (PDF)</a>
+        </p>
+      </section>
+    </main>
   </div>
-      <h2 class="header">Professional Experience</h2>
-    <div class="row jobs">
-      <div class="col-md-6">
-        <h3 class="job-card oswego cardheader box"> SUNY Oswego, 2024-present</h3> <div class="oswegoCard"></div>
-      </div>
-    <div class="row jobs">
-      <div class="col-md-6">
-        <h3 class="job-card sou cardheader box"> Southern Oregon University, 2021-2022</h3> <div class="souCard"></div>
-      </div>
-      <div class="col-md-6">
-        <h3 class="job-card tiu cardheader box"> Tokyo International University, 2016-2021</h3> <div class="tiuCard"></div>
-      </div>
-      <div class="col-md-6">
-        <h3 class="job-card psu cardheader box"> Portland State Univeristy IELP, 2013-2015</h3> <div class="psuCard"></div>
-      </div>
-      <div class="col-md-6">
-        <h3 class="job-card owca cardheader box"> Online Writing Center Association, 2023-2025</h3> <div class="owcaCard"></div>
-      </div>
-    </div>
-  <h3 class="header">Follow me</h3>
-  <div class="container end">
-      <ul>
-        <li class="inlineList"><a href="https://www.linkedin.com/in/scharf-daniel-/" target="blank"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li class="inlineList"><a href="https://github.com/DanielBScharf" target="blank"><i class="fa-brands fa-github"></i></a></li>
-      </ul>
-  </div>
+
   <script src="script.js"></script>
-  <script src="jobScript.js"></script>
-  <script src="stars.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

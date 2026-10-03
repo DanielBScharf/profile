@@ -1,26 +1,33 @@
-const info = "Daniel Scharf is a former English teacher, educator, and tutoring center administrator who has changed his career to software and web development. Daniel has about eight years of experience teaching English abroad, six years in tutoring center administration, and five years working with curriculum design. Outside of academia Daniel also worked as a cook for about 10 years. Daniel's personal interests include coding, computer games, Dungeons and Dragons, cooking, traveling, bike riding, acting, and napping with his cat.";
+// Highlights the navigation link for the section currently on screen.
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll(".rail-nav a"));
+  if (!links.length || !("IntersectionObserver" in window)) return;
 
-const paragraph = document.querySelector('.paragraph');
-const original = "Daniel Scharf is a former English teacher, educator, and tutoring center administrator who has changed his career to software and web development.";
+  var byId = {};
+  links.forEach(function (link) {
+    byId[link.getAttribute("href").slice(1)] = link;
+  });
 
-paragraph.onmouseover = function () {
-  paragraph.innerText = info;
-};
-paragraph.onmouseout = function () {
-  paragraph.innerText = original;
-};
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (link) {
+          link.classList.remove("is-current");
+          link.removeAttribute("aria-current");
+        });
+        var current = byId[entry.target.id];
+        if (current) {
+          current.classList.add("is-current");
+          current.setAttribute("aria-current", "true");
+        }
+      });
+    },
+    { rootMargin: "-30% 0px -60% 0px" }
+  );
 
-window.addEventListener("resize", function() {
-  if (window.matchMedia("(min-width: 400px)").matches) {
-    paragraph.onclick = function () {
-      paragraph.innerText = info;
-      paragraph.classList.add('clicked');
-    };
-    if (paragraph.classList.contains('clicked')) {
-      paragraph.onclick = function () {
-        paragraph.innerText = original;
-        paragraph.classList.remove('clicked');
-      };
-    }
-  }
-})
+  Object.keys(byId).forEach(function (id) {
+    var section = document.getElementById(id);
+    if (section) observer.observe(section);
+  });
+})();
