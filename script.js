@@ -1,6 +1,6 @@
 // Highlights the navigation link for the section currently on screen.
 (function () {
-  var links = Array.prototype.slice.call(document.querySelectorAll(".rail-nav a"));
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rail-nav a[href^="#"]'));
   if (!links.length || !("IntersectionObserver" in window)) return;
 
   var byId = {};

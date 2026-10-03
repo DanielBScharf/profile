@@ -184,6 +184,14 @@ main > section + section {
   border-left-color: var(--marigold);
 }
 
+/* Link to the site's other page, set apart from the in-page links. */
+.rail-nav a.nav-page {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid #2f5350;
+  color: var(--marigold);
+}
+
 .rail-actions {
   margin-top: auto;
 }
@@ -505,6 +513,45 @@ h2 {
   color: var(--ink);
 }
 
+.credentials.plain li {
+  color: var(--ink);
+}
+
+/* ---------- Presentations and awards ---------- */
+
+.award {
+  background: var(--mist);
+  border-left: 5px solid var(--marigold);
+  border-radius: 0 0.6rem 0.6rem 0;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.award h3,
+.talks h3 {
+  font-weight: 700;
+  font-size: 1.1875rem;
+  line-height: 1.3;
+}
+
+.award p:last-child,
+.talks p:last-child {
+  margin: 0.4rem 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--slate);
+  max-width: 40rem;
+}
+
+.talks {
+  list-style: none;
+}
+
+.talks li {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
 /* ---------- Contact ---------- */
 
 .contact {
@@ -624,6 +671,12 @@ h2 {
 
   .rail-nav a.is-current {
     border-bottom-color: var(--marigold);
+  }
+
+  .rail-nav a.nav-page {
+    margin-top: 0;
+    padding-top: 0.2rem;
+    border-top: 0;
   }
 
   main {
