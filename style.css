@@ -5,9 +5,9 @@
   --ink: #10302f;
   --spruce: #1c5a55;
   --slate: #465654;
-  --paper: #fafbf9;
-  --mist: #e6eeea;
-  --line: #cbd8d2;
+  --paper: #eef1ea;
+  --mist: #dbe6df;
+  --line: #c0cec6;
   --marigold: #f0b429;
 
   --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
@@ -30,7 +30,9 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background-color: var(--paper);
+  /* Fine paper grain, drawn by the browser from an inline SVG (no image file). */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.06  0 0 0 0 0.19  0 0 0 0 0.18  0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
   color: var(--ink);
   font-family: var(--body);
   font-size: 1.125rem;
